@@ -1,13 +1,12 @@
 #include <IRremote.h>
 
 IRsend irsend;
-int PulseSensorPurplePin = A0;
+int PulseSensor = A0;
 int LED13 = 13;
 int Signal;
 int Threshold = 530;
 
 void setup() {
-   //pinMode(LED13,LOW);
    pinMode(3, OUTPUT);
    Serial.begin(115200);
 
@@ -15,7 +14,7 @@ void setup() {
 
 void loop() {
 
-   Signal = analogRead(PulseSensorPurplePin);                                    
+   Signal = analogRead(PulseSensor);                                    
 
    Serial.println(Signal);
 
