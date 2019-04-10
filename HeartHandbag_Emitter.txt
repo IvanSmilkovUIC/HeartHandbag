@@ -2,7 +2,6 @@
 
 IRsend irsend;
 int PulseSensor = A0;
-int LED13 = 13;
 int Signal;
 int Threshold = 530;
 
